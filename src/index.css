@@ -1,0 +1,206 @@
+
+body {
+  margin: 0;
+  font-family: "Inter", -apple-system, BlinkMacSystemFont, sans-serif;
+  background-color: #f8fafc;
+  color: #0f172a;
+}
+
+/* Layout */
+
+.home {
+  max-width: 1100px;
+  margin: auto;
+  padding: 100px 40px;
+}
+
+/* Hero */
+
+.hero {
+  text-align: left;
+  margin-bottom: 100px;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.tagline {
+  font-size: 1.2rem;
+  color: #475569;
+  margin-bottom: 20px;
+}
+
+.bio {
+  max-width: 700px;
+  line-height: 1.7;
+  color: #334155;
+  margin-bottom: 40px;
+}
+
+/* Buttons */
+
+.actions {
+  display: flex;
+  gap: 20px;
+}
+
+.primary-btn {
+  background-color: #0f172a;
+  color: white;
+  padding: 12px 24px;
+  border-radius: 6px;
+  text-decoration: none;
+  transition: 0.2s ease;
+}
+
+.primary-btn:hover {
+  background-color: #1e293b;
+}
+
+.secondary-btn {
+  border: 1px solid #0f172a;
+  color: #0f172a;
+  padding: 12px 24px;
+  border-radius: 6px;
+  text-decoration: none;
+  transition: 0.2s ease;
+}
+
+.secondary-btn:hover {
+  background-color: #0f172a;
+  color: white;
+}
+
+/* Sections */
+
+.section {
+  margin-top: 60px;
+}
+
+.section h2 {
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+}
+
+/* Card */
+
+.card {
+  background: white;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+  max-width: 600px;
+}
+
+.card h3 {
+  margin-top: 0;
+}
+
+.projects-container {
+  max-width: 1100px;
+  margin: auto;
+  padding: 80px 40px;
+}
+
+.projects-title {
+  font-size: 2.5rem;
+  margin-bottom: 50px;
+  font-weight: 600;
+}
+
+.project-card {
+  background: white;
+  padding: 40px;
+  border-radius: 16px;
+  box-shadow: 0 12px 30px rgba(0,0,0,0.06);
+  margin-bottom: 50px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 18px 40px rgba(0,0,0,0.08);
+}
+
+.project-card h2 {
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+
+.project-card p {
+  line-height: 1.7;
+  color: #475569;
+}
+
+/* Buttons */
+
+.project-buttons {
+  margin-top: 25px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.project-btn {
+  padding: 10px 18px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 0.9rem;
+  transition: 0.2s ease;
+}
+
+.primary {
+  background-color: #0f172a;
+  color: white;
+}
+
+.primary:hover {
+  background-color: #1e293b;
+}
+
+.secondary {
+  border: 1px solid #0f172a;
+  color: #0f172a;
+}
+
+.secondary:hover {
+  background-color: #0f172a;
+  color: white;
+}
+
+.tertiary {
+  background-color: #e2e8f0;
+  color: #0f172a;
+}
+
+.tertiary:hover {
+  background-color: #cbd5e1;
+}
+.about-container {
+  max-width: 1000px;
+  margin: auto;
+  padding: 80px 40px;
+}
+
+.about-title {
+  font-size: 2.5rem;
+  font-weight: 600;
+  margin-bottom: 40px;
+}
+
+.about-section {
+  background: white;
+  padding: 40px;
+  border-radius: 16px;
+  box-shadow: 0 12px 30px rgba(0,0,0,0.06);
+}
+
+.about-section p {
+  line-height: 1.8;
+  color: #475569;
+  margin-bottom: 20px;
+}
