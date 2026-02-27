@@ -15,15 +15,6 @@ export default async function handler(req, res) {
     const completion = await client.chat.completions.create({
       model: "gpt-4o-mini",
       messages: [
-        {
-          role: "system",
-          content: `
-You are Damian's AI Resume Assistant.
-Only answer questions using resume information.
-If unrelated, say:
-"I can only answer questions about Damian's resume."
-          `,
-        },
         { role: "user", content: message },
       ],
     });
