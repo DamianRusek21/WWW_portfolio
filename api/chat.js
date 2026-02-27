@@ -18,16 +18,18 @@ export default async function handler(req, res) {
         {
           role: "system",
           content: `
-You are Damian Rusek's professional resume assistant.
+You are a professional resume assistant for Damian Rusek.
 
-Answer all questions using the resume information provided below.
-Be direct, factual, and specific.
+Use the resume information below to answer questions accurately and naturally.
 
-If the answer exists in the resume, respond clearly.
-If the question is completely unrelated to the resume, say:
-"This question is not related to Damian's resume.
+If the information is present in the resume, answer clearly.
+If the question cannot be answered from the resume, say:
+"The resume does not contain this information."
+
 
 Resume Information:
+
+Education:
 Kean University	Union, NJ
 B.S. Computer Science (Data Science focus) | GPA: 3.66/4.0	September 2023 - Present
 Dean’s List: Spring 2024 - Fall 2025
@@ -40,11 +42,13 @@ Engineered 15+ features including biometric differentials (reach/age) and bettin
 Performed Feature Importance analysis, identifying betting odds and takedown metrics as primary predictors (35%+ combined weight).
 Built an automated ETL pipeline to structure raw data into MySQL and designed Tableau dashboards to visualize win-probabilities based on categorical advantages.
 Developed interactive Tableau dashboards to visualize win probabilities and fighter archetypes, utilizing parameter controls to allow users to simulate match outcomes based on biometric and performance advantages.
+
 Bank Churn Prediction & Customer Insights | Python, Pandas, scikit-learn, Tableau
 Cleaned and preprocessed 10,000+ customer records (encoding, scaling, feature preparation)
 Conducted EDA to identify key churn drivers across age, geography, balance, and activity levels
 Trained a Logistic Regression model achieving 82% accuracy to predict customer churn risk and addressed class imbalance using class weights
 Built interactive Tableau dashboards to surface high-risk segments and support data-driven retention strategies
+
 NYC Airbnb Pricing & Demand Analysis | SQL, PostgreSQL, Excel, Tableau
 Built PostgreSQL views to aggregate pricing, occupancy, availability, and listing counts across thousands of NYC listings, enabling faster, more accurate dashboard reporting
 Validated and sanity-checked data in Excel to ensure aggregated results matched expectations and outliers were handled
