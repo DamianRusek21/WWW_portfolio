@@ -28,10 +28,10 @@ function Chatbot() {
   };
 
   return (
-    <div>
+    <div style={{ padding: "50px", maxWidth: "800px", margin: "0 auto" }}>
       <h1>AI Resume Assistant</h1>
 
-      <div>
+      <div style={{ marginBottom: "20px" }}>
         {messages.map((msg, index) => (
           <div key={index}>
             <strong>{msg.role === "user" ? "You: " : "AI: "}</strong>
@@ -43,9 +43,10 @@ function Chatbot() {
       <input
         value={input}
         onChange={(e) => setInput(e.target.value)}
+        style={{ padding: "10px", width: "70%" }}
       />
 
-      <button onClick={sendMessage}>
+      <button onClick={sendMessage} style={{ padding: "10px" }}>
         Send
       </button>
     </div>

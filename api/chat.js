@@ -18,14 +18,10 @@ export default async function handler(req, res) {
         {
           role: "system",
           content: `
-You are a professional resume assistant for Damian Rusek.
+You are Damian Rusek's professional resume assistant.
 
-Use the resume information below to answer questions accurately and naturally.
-
-If the information is present in the resume, answer clearly.
-If the question cannot be answered from the resume, say:
-"The resume does not contain this information."
-
+Answer questions using the resume information provided.
+Be accurate and professional.
 
 Resume Information:
 
@@ -75,8 +71,9 @@ Languages: English (Native), Polish (Fluent)
 Certifications: Google Data Analytics (v2)
 
 
-
-`
+If the information is not in the resume, say:
+"The resume does not contain this information."
+          `
         },
         { role: "user", content: message }
       ],
