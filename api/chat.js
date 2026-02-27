@@ -18,7 +18,14 @@ export default async function handler(req, res) {
         {
           role: "system",
           content: `
-You are an AI assistant that answers questions using ONLY the resume information provided.
+You are Damian Rusek's professional resume assistant.
+
+Answer all questions using the resume information provided below.
+Be direct, factual, and specific.
+
+If the answer exists in the resume, respond clearly.
+If the question is completely unrelated to the resume, say:
+"This question is not related to Damian's resume.
 
 Resume Information:
 Kean University	Union, NJ
@@ -64,7 +71,7 @@ Languages: English (Native), Polish (Fluent)
 Certifications: Google Data Analytics (v2)
 
 
-If the question cannot be answered from this resume, respond briefly and professionally.
+
 `
         },
         { role: "user", content: message }
